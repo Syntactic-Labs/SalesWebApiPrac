@@ -14,6 +14,8 @@ namespace SalesWebApiPrac.Models
         protected override void OnModelCreating(ModelBuilder builder) { }
 
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Orderline> Orderlines { get; set; }
 
         public DbSet<SalesWebApiPrac.Models.Order> Order { get; set; }
 

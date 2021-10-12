@@ -14,7 +14,7 @@ namespace SalesWebApiPrac.Models
         public string Description { get; set; }
         [Column(TypeName = "decimal(11,2)")]
         public decimal Total { get; set; }
-        public int CustomerId { get; set; }
+        public int? CustomerId { get; set; }
 
         public virtual Customer Customer { get; set; }
         public virtual IEnumerable<Orderline> Orderlines { get; set; }
